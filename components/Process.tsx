@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
-import { Send, Search, FileCheck, PiggyBank, UserPlus } from 'lucide-react';
+import { Search, FileCheck, PiggyBank, UserPlus } from 'lucide-react';
 
 const steps = [
   {
@@ -53,8 +53,8 @@ const Process: React.FC = () => {
   });
 
   return (
-    <section id="proceso" ref={containerRef} className="py-32 px-6 relative bg-dark-800/20">
-      <div className="max-w-5xl mx-auto">
+    <section id="proceso" ref={containerRef} className="py-32 px-4 sm:px-6 relative bg-dark-800/20">
+      <div className="w-full max-w-[1200px] mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ const Process: React.FC = () => {
                 {/* Empty spacer for layout balance on desktop */}
                 <div className="flex-1 hidden md:block" />
               </div>
-            )}})}
+            )})}
           </div>
         </div>
       </div>
